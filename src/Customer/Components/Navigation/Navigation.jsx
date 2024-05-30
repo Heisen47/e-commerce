@@ -265,7 +265,7 @@ export default function Navigation() {
               {/* Logo */}
               <div className="ml-4 flex lg:ml-0">
                 {/* <Link to="/"> */}
-                  <span className="sr-only">Your Company</span>
+                  <span className="sr-only">My Company</span>
                   <img
                     src="https://res.cloudinary.com/ddkso1wxi/image/upload/v1675919455/Logo/Copy_of_Zosh_Academy_nblljp.png"
                     alt="Shopwithzosh"
