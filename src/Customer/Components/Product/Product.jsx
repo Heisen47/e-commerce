@@ -70,17 +70,14 @@ export default function Product() {
     navigate({ search: `?${query}` });
   };
 
-
-  const handleRadioFilterChange = (e , sectionId)=>{
-
+  const handleRadioFilterChange = (e, sectionId) => {
     const searchParams = new URLSearchParams(location.search);
 
     searchParams.set(sectionId, e.target.value);
-    
+
     const query = searchParams.toString();
     navigate({ search: `?${query}` });
-     
-  }
+  };
 
   return (
     <div className="bg-white">
@@ -379,7 +376,9 @@ export default function Product() {
                                   {section.options.map((option, optionIdx) => (
                                     <>
                                       <FormControlLabel
-                                      onChange={(e)=> handleRadioFilterChange(e , section.id)}
+                                        onChange={(e) =>
+                                          handleRadioFilterChange(e, section.id)
+                                        }
                                         value={option.value}
                                         control={<Radio />}
                                         label={option.label}
